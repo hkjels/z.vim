@@ -25,19 +25,6 @@ if exists("g:z_exclude_dirs")
 endif
 
 
-" Override native `cd`-command, so that the `z` index is updated
-" with whatever directories you `cd` into.
-" TODO Directories should be indexed upon `cd`
-"    | ATM #z will ouput an error with the "fun" below.
-
-" fun! s:CD(directory)
-"   exec '!cd '.directory
-"   exec 'cd '.directory
-" endfun
-" 
-" cabbrev cd <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'CD' : 'cd')<CR>
-
-
 " Takes a list of regular expressions and returns a list
 " of paths and weights.
 
