@@ -18,10 +18,8 @@ CONTENTS                                                          *z-contents*
 INTRODUCTION                                                  *z-introduction*
 
 Z tracks your most used directories and makes it possible to jump to
-a directory using a set of regular-expressions.
-Note: For z.vim to work, the z-CLI must be available to vim.
-      Easiest way is to make your source your shell configurations.
-      Ex. set shell=bash\ --login
+a directory using a set of regular-expressions. If your not familiar with
+z, you should have a look. https://github.com/rupa/z
 
 
 ============================================================================

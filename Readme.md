@@ -2,7 +2,8 @@ z.vim
 =====
 
 Z.vim is a wrapper around the CLI `z`. It will allow you to jump
-between your projects with ease.
+between your projects with ease. If your not familiar with
+[z](https://github.com/rupa/z), you should have a look.
 
 
 ## Installation
