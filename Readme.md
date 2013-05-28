@@ -1,4 +1,3 @@
-
 z.vim
 =====
 
@@ -11,23 +10,17 @@ between your projects with ease.
 You'll need to have `z` installed and use your login shell with vim.
 I recommend installing `z.vim` using vundle.
 
-´´´VimL
-set shell=bash\ --login
-bundle 'hkjels/z.vim'
-´´´
+    set shell=bash\ --login
+    bundle 'hkjels/z.vim'
 
 
 ## Usage
 
-´´´VimL
-:Z regex [regex, ..]
-´´´
+    :Z regex [regex, ..]
 
 Will cd into the directory specified.
 
-´´´VimL
-:Zl
-´´´
+    :Zl [regex]
 
 Same as calling `z -l` from the command-line except the list is
 interactive. You can navigate the list like a normal buffer. However:
