@@ -1,0 +1,63 @@
+
+*z.txt*  Z quick-jump for vim                                                *Z*
+
+Author:  Henrik Kjelsberg <hkjels@me.com> (http://take.no/)
+License: MIT
+
+============================================================================
+CONTENTS                                                          *z-contents*
+
+  1. Introduction ............ |z-introduction|
+  2. Usage ................... |z-usage|
+  3. Configuration ........... |z-configuration|
+  4. Contributing ............ |z-contributing|
+  5. Credits ................. |z-credits|
+
+
+============================================================================
+INTRODUCTION                                                  *z-introduction*
+
+Z tracks your most used directories and makes it possible to jump to
+a directory using a set of regular-expressions.
+Note: For z.vim to work, the z-CLI must be available to vim.
+      Easiest way is to make your source your shell configurations.
+      Ex. set shell=bash\ --login
+
+
+============================================================================
+USAGE                                                                *z-usage*
+
+:Z regex [regex]      Will cd into the topmost frecent directory that
+                      matches your expression.
+
+:Zl [regex] [regex]   Opens up an interactive list of the most used
+                      directories.
+                      Mappings available within the buffer:
+                      <enter>, <leftrelease> - make directory CWD
+                      <c-o> - Open directory in a new window
+                      <c-s> - Open directory in a vertically split window
+
+
+============================================================================
+CONFIGURATION                                                *z-configuration*
+
+g:z_data                  Index-file to be used.
+                          Ex. let g:z_data = '~/.z-vim'
+g:z_no_resolve_symlinks   Prevent symlink resolving.
+g:z_exclude_dirs          List of directories to exclude.
+
+
+============================================================================
+CONTRIBUTING                                                  *z-contributing*
+
+You can contribute by sending me a pull-request on github or by leaving an
+issue. http://github.com/hkjels/z.vim/issues
+
+============================================================================
+CREDITS                                                            *z-credits*
+
+* Rupa Deadwyler <rupa@lrrr.us> (https://github.com/rupa)
+* [Your name]
+
+vim:tw=78:et:ft=help:norl:
+
