@@ -25,6 +25,16 @@ if exists("g:z_exclude_dirs")
 endif
 
 
+" Override the built-in cd command to update the index
+
+fun! s:CD(directory)
+  exec '!cd '.directory
+  exec 'cd '.directory
+endfun
+
+cabbrev cd <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'CD' : 'cd')<CR>
+
+
 " Takes a list of regular expressions and returns a list
 " of paths and weights.
 
